@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Informasi Kekeringan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Warna latar belakang yang konsisten dengan halaman utama */
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #264653; /* Warna biru yang konsisten */
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .navbar ul li {
+            margin-right: 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Konten Halaman */
+        #about-page {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: white; /* Background putih untuk konten */
+            margin: 20px auto;
+            max-width: 1000px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #about-page h2 {
+            color: #264653; /* Warna biru untuk judul */
+        }
+
+        #about-page p {
+            font-size: 18px;
+            color: #333; /* Warna teks gelap agar mudah dibaca */
+            line-height: 1.6;
+        }
+
+        /* Styling untuk gambar dan kutipan */
+        .photo-frame-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            margin-bottom: 50px; /* Memberikan jarak dari footer */
+        }
+
+        .photo-frame {
+            width: 150px;
+            height: 200px;
+            background-color: #e0e0e0; /* Warna latar belakang foto */
+            border: 2px solid #264653; /* Border biru konsisten */
+            border-radius: 8px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-frame img {
+            max-width: 100%;
+            max-height: 80%;
+            border-radius: 5px;
+        }
+
+        .quote {
+            font-size: 12px;
+            color: #333; /* Warna teks kutipan */
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        /* Efek hover pada photo-frame */
+        .photo-frame:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0077b6; /* Warna biru yang konsisten */
+            color: white;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about-page">
+        <h2>Tentang Website Ini</h2>
+        <h4><p>Kami mengembangkan Website ini untuk memberikan informasi terkini mengenai kondisi kekeringan di Indonesia, serta menyediakan peta interaktif dan grafik data yang membantu pemantauan.</p></h4>
+        <div class="photo-frame-container">
+            <div class="photo-frame">
+                <img src="sultan.jpeg" alt="Foto Anggota 1">
+                <div class="quote">"Kerja keras adalah kunci sukses."</div>
+            </div>
+            <div class="photo-frame">
+                <img src="kamal.jpeg" alt="Foto Anggota 2">
+                <div class="quote">"Bersama kita bisa."</div>
+            </div>
+            <div class="photo-frame">
+                <img src="aura.jpeg" alt="Foto Anggota 3">
+                <div class="quote">"Perubahan dimulai dari langkah kecil."</div>
+            </div>
+            <div class="photo-frame">
+                <img src="hafid.jpeg" alt="Foto Anggota 4">
+                <div class="quote">"Tidak ada usaha yang sia-sia."</div>
+            </div>
+            <div class="photo-frame">
+                <img src="rayhan.jpeg" alt="Foto Anggota 5">
+                <div class="quote">"Impian besar dimulai dari mimpi kecil."</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Informasi Kekeringan - Semua Hak Dilindungi</p>
+    </footer>
+</body>
+</html>

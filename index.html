@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informasi Kekeringan</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navbar Kiri -->
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Pengertian</a></li>
+                <li><a href="#jenis">Jenis</a></li>
+                <li><a href="#penyebab">Penyebab</a></li>
+                <li><a href="#dampak">Dampak</a></li>
+                <li><a href="#mitigasi">Mitigasi</a></li>
+                <li><a href="#map-section">Peta</a></li>
+                <li><a href="#chart-section">Grafik</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Navbar Atas -->
+    <header class="topbar">
+        <nav>
+            <ul>
+                <li><a href="https://bmkg.go.id/berita/?p=prediksi-musim-kemarau-2024-bmkg-tekankan-pentingnya-modifikasi-cuaca&lang=ID">Berita Terkini</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten Halaman -->
+    <main>
+        <!-- Bagian Home -->
+        <section id="home">
+            <h1>Website Sistem Informasi Kekeringan</h1>
+        </section>
+
+        <!-- Bagian Pengertian -->
+<section id="about">
+    <h2>Pengertian Kekeringan</h2>
+    <p>Secara Umum Kekeringan adalah kondisi di mana suatu wilayah, lahan, maupun masyarakat mengalami kekurangan air sehingga tidak dapat memenuhi kebutuhannya dalam masa yang berkepanjangan.</p>
+</section>
+
+<!-- Bagian Jenis Kekeringan -->
+<section id="jenis">
+    <h2>Jenis Kekeringan</h2>
+    <h3><b>Alamiah</b></h3>
+    <p>Kekeringan alamiah terjadi akibat tingkat curah hujan di bawah normal dalam satu musim, kekurangan pasokan air permukaan dan air tanah, kekurangan kandungan air di dalam tanah sehingga tidak mampu memenuhi kebutuhan tanaman tertentu pada periode waktu tertentu pada wilayah yang luas, pasokan komoditi ekonomi kurang dari kebutuhan normal.</p>
+    <p>Kekeringan yang terjadi secara alamiah dibedakan menjadi empat, yaitu kekeringan meteorologis, kekeringan hidrologis, kekeringan agronomis, dan kekeringan sosial ekonomi.</p>
+
+    <h4>Kekeringan Meteorologis</h4>
+    <p>Contoh: Sebuah wilayah mengalami musim kemarau panjang, di mana curah hujan jauh di bawah rata-rata selama beberapa bulan. Misalnya, kekeringan yang sering terjadi di Afrika bagian Timur akibat anomali cuaca seperti El Niño.</p>
+    <p>Ciri utama: Terjadi karena rendahnya curah hujan dibandingkan dengan rata-rata jangka panjang. Dampaknya langsung terhadap iklim dan cuaca.</p>
+
+    <h4>Kekeringan Hidrologis</h4>
+    <p>Contoh: Sebuah sungai atau waduk yang biasanya digunakan untuk irigasi dan pasokan air minum mulai mengering karena aliran air yang sangat berkurang. Misalnya, penurunan permukaan air di Sungai Colorado, AS, yang mempengaruhi pasokan air ke berbagai kota besar.</p>
+    <p>Ciri utama: Terjadi setelah kekeringan meteorologis yang berlangsung lama. Fokus utamanya adalah berkurangnya pasokan air di sistem perairan seperti sungai, danau, dan waduk.</p>
+
+    <h4>Kekeringan Agronomis</h4>
+    <p>Contoh: Seorang petani di Jawa mengalami gagal panen padi karena tanah di ladangnya kering dan tidak bisa mempertahankan kelembapan yang cukup untuk tanaman, meskipun ada irigasi kecil.</p>
+    <p>Ciri utama: Terkait langsung dengan tanah yang tidak lagi mampu menyimpan air yang cukup untuk mendukung pertumbuhan tanaman. Kekeringan ini lebih memengaruhi sektor pertanian.</p>
+
+    <h4>Kekeringan Sosial Ekonomi</h4>
+    <p>Contoh: Pada tahun 2011, kekeringan di Somalia menyebabkan kegagalan panen dan ternak mati, mengakibatkan krisis pangan yang besar, memicu migrasi massal, dan mengganggu stabilitas ekonomi serta sosial di wilayah tersebut.</p>
+    <p>Ciri utama: Ini adalah hasil akhir dari dampak semua kekeringan sebelumnya, yang menyebabkan krisis pangan, kelaparan, pengangguran, dan masalah ekonomi lainnya di masyarakat.</p>
+
+    <h3><b>Antropogenik</b></h3>
+    <p>Kekeringan antropogenik adalah kekeringan yang disebabkan oleh aktivitas manusia, seperti penggunaan air yang berlebihan atau kerusakan kawasan tangkapan air. Kekeringan antropogenik dapat menyebabkan kebangkrutan air dalam sistem air yang dibuat manusia.</p>
+</section>
+
+<!-- Bagian Penyebab Kekeringan -->
+<section id="penyebab">
+    <h2>Penyebab Kekeringan</h2>
+    <h3>Curah hujan di bawah normal</h3>
+    <p>Kekeringan dapat disebabkan karena suatu wilayah tidak mengalami hujan atau kemarau dalam kurun waktu yang cukup lama atau curah hujan di bawah normal, sehingga kandungan air di dalam tanah berkurang atau bahkan tidak ada.</p>
+
+    <h3>Konsumsi air yang berlebihan</h3>
+    <p>Hal ini disebabkan konsumsi air berlebih tidak diimbangi dengan sumber air yang berlebih pula. Konsumsi air berbanding terbalik dengan sumber air, artinya bencana ini dapat terjadi saat konsumsi air sudah melampaui batasnya namun sumber air hanya mengeluarkan air dengan jumlah yang sama (terbatas).</p>
+
+    <h3>Sedikitnya pepohonan</h3>
+    <p>Hal ini berarti, ketika musim kemarau datang daerah yang memiliki sedikit pohon akan memiliki cadangan air yang sedikit pula karena pohon-pohon tersebut sudah tergantikan oleh bangunan-bangunan khususnya di daerah perkotaan.</p>
+</section>
+
+<!-- Bagian Dampak Kekeringan -->
+<section id="dampak">
+    <h2>Dampak Kekeringan</h2>
+    <h3>Dampak Negatif:</h3>
+    <h4>Mempengaruhi pertanian dan produksi pangan</h4>
+    <p>Salah satu dampak kekeringan yang paling signifikan adalah dampaknya terhadap pertanian dan produksi pangan. Di beberapa wilayah di seluruh dunia, terutama di Afrika sub-Sahara, 95% pertanian bergantung pada air hijau. Air hijau adalah air yang tertahan di dalam tanah dan tersedia bagi tanaman. Seiring dengan terus meningkatnya suhu, air hijau pun menghilang.</p>
+
+    <h4>Dampak sosial kekeringan</h4>
+    <p>Ketika air menjadi langka, hal itu juga menyebabkan kecemasan dan keresahan di masyarakat umum. Harga air meningkat sehingga memperlebar kesenjangan antara orang kaya dan orang miskin karena hanya orang kaya yang mampu membelinya. Bahkan bisa terjadi konflik lokal antara pengguna air hingga konflik regional di mana negara-negara berbagi daerah aliran sungai. Contohnya adalah konflik antara warga Mesir dan Ethiopia atas air di Cekungan Sungai Nil.</p>
+
+    <h3>Dampak Positif:</h3>
+    <h4>Menyeimbangkan kesehatan lahan basah</h4>
+    <p>Lahan basah biasanya merupakan salah satu ekosistem yang paling beragam dan produktif di Bumi. Ekosistem ini meliputi rawa-rawa garam, muara, hutan bakau, dll. Berbagai tanaman tumbuh di lahan basah serta hewan seperti bebek dan unggas air. Sistem ini bersifat dinamis sehingga memungkinkan banyak makhluk hidup untuk berkembang di dalamnya.</p>
+
+    <h4>Meningkatkan kesadaran tentang penghematan air</h4>
+    <p>Meskipun Bumi terdiri dari 75% air, hanya 2,5% yang merupakan air tawar yang dapat kita konsumsi. Terlebih lagi, sekitar dua pertiga populasi dunia tinggal di daerah dengan akses terbatas ke air tawar.</p>
+</section>
+
+<!-- Bagian Mitigasi Kekeringan -->
+<section id="mitigasi">
+    <h2>Mitigasi Kekeringan</h2>
+    <h3>Penghematan Air</h3>
+    <p>Menggunakan air hujan untuk kegiatan non-urgensi dan membatasi penggunaan air, misalnya untuk mencuci kendaraan, dapat membantu menjaga ketersediaan air selama musim kering.</p>
+
+    <h3>Pengelolaan Air Hujan</h3>
+    <p>Salah satu solusi yang disarankan oleh pakar adalah dengan memanen dan menabung air hujan selama musim hujan untuk digunakan saat kemarau. Hal ini dapat membantu menyediakan cadangan air untuk pertanian dan kebutuhan sehari-hari di musim kering​.</p>
+
+    <h3>Pengelolaan Tanah dan Tanaman</h3>
+    <p>Melakukan diversifikasi dengan menanam varietas tanaman yang lebih tahan kekeringan dan menggunakan teknik konservasi tanah seperti mulsa, yang dapat membantu mempertahankan kelembaban tanah.</p>
+</section>
+
+
+        
+        <section id="map-section">
+            <h2>Peta Lokasi Kekeringan</h2>
+            <select id="year-select">
+                <option value="2023">Tahun 2023</option>
+                <option value="2024">Tahun 2024</option>
+            </select>
+            <div id="map-container"></div>
+        </section>
+
+        
+        <section id="chart-section">
+            <h2>Grafik Data Kekeringan</h2>
+            <canvas id="droughtChart" width="400" height="200"></canvas>
+        </section>
+
+        
+        
+    </main>
+
+   <!-- Footer -->
+<footer>
+    <div class="footer-content">
+
+        
+
+        <ul class="social-links">
+            <li><a href="https://wa.me/+6289668492188" target="_blank">HAFID</a></li>
+            <li><a href="#" target="_blank">SULTHAN</a></li>
+            <li><a href="#" target="_blank">KAMAL</a></li>
+            <li><a href="#" target="_blank">AURA</a></li>
+            <li><a href="#" target="_blank">RAYHAN</a></li>
+        </ul>
+        <p>© Kelompok 8 Sistem Informasi Kekeringan - All rights reserved</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

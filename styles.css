@@ -1,0 +1,254 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+/* Navbar Kiri */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 175px;
+    height: 100%;
+    background-color: #2a9d8f;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #264653;
+}
+
+/* Navbar Atas */
+.topbar {
+    
+    top: 0;
+    left: 200px; /* Menyesuaikan dengan lebar sidebar */
+    right: 0;
+    height: 60px;
+    background-color: #264653;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.topbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.topbar nav ul li a:hover {
+    background-color: #f4a261;
+}
+
+/* Konten Utama */
+main {
+    margin-left: 220px; /* Menyesuaikan dengan sidebar */
+    margin-top: 70px; /* Menyesuaikan dengan topbar */
+    padding: 20px;
+}
+
+/* Bagian Home */
+#home {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff3e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #f4a261;
+}
+
+#home h1 {
+    color: #fff;
+    background-color: #f4a261;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#home p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif; /* Font modern */
+    font-weight: 700; /* Heading yang tegas */
+    color: #2a9d8f; /* Warna hijau kebiruan yang segar */
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Memberikan efek dimensi */
+}
+
+/* Styling Khusus untuk H1 */
+h1 {
+    font-size: 36px; /* Ukuran lebih besar */
+    text-align: center; /* Sentral untuk menonjolkan heading utama */
+    border-bottom: 3px solid #264653; /* Garis bawah dekoratif */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Styling Khusus untuk H2 */
+h2 {
+    font-size: 30px;
+    text-transform: uppercase; /* Memberikan kesan formal */
+    border-left: 6px solid #264653; /* Garis samping dekoratif */
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+/* Styling Khusus untuk H3 */
+h3 {
+    font-size: 24px;
+    color: #e76f51; /* Warna oranye untuk variasi */
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+/* Styling Khusus untuk H4 */
+h4 {
+    font-size: 20px;
+    font-style: italic; /* Memberikan gaya elegan */
+    color: #457b9d; /* Biru lembut */
+    margin-left: 30px;
+    margin-bottom: 10px;
+    border-left: 4px solid #457b9d; /* Garis dekoratif kecil */
+    padding-left: 10px;
+}
+
+/* Styling Paragraph */
+p {
+    font-family: 'Open Sans', sans-serif; /* Font mudah dibaca */
+    font-size: 16px;
+    line-height: 1.8; /* Memberikan spasi yang nyaman */
+    color: #333; /* Warna gelap untuk kontras */
+    margin-bottom: 20px;
+    text-align: justify; /* Rapi dalam tata letak */
+}
+
+/* Paragraph Styling in Section */
+section p {
+    margin-left: 50px; /* Memberikan indentasi lebih besar dari h4 */
+    text-indent: 20px; /* Menambahkan indentasi baris pertama untuk mempertegas */
+}
+
+
+
+/* Form Elements */
+#year-select {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Map Section */
+#map-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Chart Section */
+#chart-section canvas {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Styling untuk footer */
+footer {
+    background-color: #264653; /* Menyesuaikan dengan tema */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Membuat konten footer berada di tengah */
+}
+
+.footer-content {
+    max-width: 1200px; /* Membatasi lebar konten footer */
+    width: 100%;
+}
+
+footer p {
+    color: white; /* Menetapkan warna teks menjadi putih */
+    margin: 0; /* Menghapus margin default */
+    font-size: 14px; /* Menyesuaikan ukuran font jika perlu */
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links li a:hover {
+    text-decoration: underline;
+}
